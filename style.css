@@ -1,0 +1,51 @@
+/*style geral*/
+#main-container {
+  margin: 3px;
+  padding: 3px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#main-container {
+  width: auto;
+  margin: auto;
+  background-color: blue;
+  border-radius: 10px;
+
+  padding: 25px;
+}
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem; /*fonte adapta ao elemento root*/
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input {
+  padding: 10px;
+}
+
+input[type='submit'] {
+  background-color: red;
+  border: black;
+  color: white;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+/*validações*/
+.error-validation {
+  color: red;
+  position: absolute;
+  top: 57px;
+  font-size: none;
+}
+
+.template {
+  display: none;
+}
