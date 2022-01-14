@@ -1,3 +1,15 @@
+<?php
+  if(isset($_POST['submit']))
+  {
+    print_r('NOME:'.$_POST['nome']);
+    print_r('<br>');
+    print_r('CPF: '.$_POST['cpf']);
+    print_r('<br>');
+    print_r('TELEFONE: '.$_POST['telefone']);
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +25,7 @@
 <body>
   <div id="main-container">
     <h1>CADASTRE O FUNCIONARIO </h1>
-    <form id="register-form" enctype="multipart/form-data">
+<form id="register-form" enctype="multipart/form-data" action="index.php" method="POST">
       <div class="full-box">
         <label for="name">Nome:</label>
         <input type="text" name="name" id="name" placeholder="Digite o nome">
